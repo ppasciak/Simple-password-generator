@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Password Generator</title>
+<link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+</head>
+
+<body>
+  <header>
+    Password Generator
+  </header>
+  <div class="wrapper">
+    <form>
+        <span>Długość hasła:</span>
+        <button class="amount" id="minus">-</button>
+        <input type="number" id="length" min="4" max="64" value="8">
+        <button class="amount" id="plus">+</button>
+        <input type="submit" id="gen" value="create">
+      <label>
+        <input type="checkbox" class="chars" value="0" checked><span>a-z</span>
+      </label>
+      <label>
+        <input type="checkbox" class="chars" value="1"><span>A-Z</span>
+      </label>
+      <label>
+        <input type="checkbox" class="chars" value="2"><span>0-9</span>
+      </label>
+      <label>
+        <input type="checkbox" class="chars" value="3"><span>!@#$</span>
+      </label>
+    </form>
+    <p id="passw"></p>
+    <div class="alert hidden">
+      Podaj długość hasła od 2 do 64 znaków
+      <button class="close">close</button>
+    </div>
+  </div>
+  <footer><a href="http://github.com/ppasciak">Paweł Paściak</a> 2017</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
